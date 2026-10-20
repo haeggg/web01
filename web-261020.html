@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>261020 복습</title>
+        <style>
+            td{
+                padding: 15px;
+            }
+            td a{
+                text-decoration: none;
+                color: skyblue;
+            }
+            h5{
+                color: blueviolet;
+            }
+            #table2{
+                border: 1px solid #222;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- 메뉴 설정 -->
+        <table>
+            <tr>
+                <td><a href="#content1">img, figure 태그 관련</a></td>
+                <td><a href="#content2">a 태그 관련</a></td>
+                <td><a href="#content3">페이지 내 이동 태그 관련</a></td>
+                <td><a href="#content4">form 태그 관련</a></td>
+        </table>
+
+        <br>
+        <hr>
+        <br>
+        <br>
+
+        <h5>caption 태그</h5>
+        <table id="table2">
+            <caption>테이블 위에 </caption>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <!-- img 태그 -->
+        <h5 id="contant1">img 태그</h5>
+
+        <!-- figure, figcaption 태그 -->
+        <figure>
+            <figcaption>
+                이미지를 표현하기 위한 태그
+                <br>
+                figure 태그: 설명글을 붙일 태그 지정하는 태그 
+                (테이블 태그나 이미지 태그랑 같이 사용)
+                <br>
+                figcaption 태그: 설명글 태그
+            </figcaption>
+            <img src="image/cat2.gif" width="200px" alt="고양이 움짤">
+        </figure>
+
+        <br>
+        <hr>
+        <br>
+
+        <!-- a 태그 -->
+        <h5 id="contant2">a 태그</h5>
+        <p><a href="https://i.pinimg.com/originals/69/0e/9b/690e9b5c4fad48425963ac784feeab8b.gif">하이퍼링크</a>를 연결해 주는 태그</p>
+        <p>이미지도 가능</p>
+        <a href="https://i.pinimg.com/originals/69/0e/9b/690e9b5c4fad48425963ac784feeab8b.gif"><img src="image/cat2.gif" width="200px" alt="고양이 움짤"></a>
+
+        <br>
+        <hr>
+        <br>
+
+        <!-- id 속성 -->
+        <h5 id="content3">페이지 내 이동</h5>
+        <p> id를 이용하여 위치에 id 설정 / a 태그 href 속성에 # 아이디 설정</p>
+
+        <br>
+        <hr>
+        <br>
+
+        <!-- form 태그 -->
+        <h5 id="content4">form 태그</h5>
+
+        <form method="get" action="hidden" enctype="utf-8">
+        <!-- form 태그에 적힌 method / action / enctype 속성은 jsp 에서 처리하기 위해 적어주는 속성 -->
+            
+            <p>외부로부터 값을 받기 위해 사용하는 태그</p>
+            
+            <!-- fieldset 태그: form 태그에 테두리 설정 -->
+            <fieldset>
+
+                <!-- legend 태그: fieldset 테두리 위에 텍스트 기재 -->
+                <legend>fieldset 태그</legend>
+                <label>└ legend 태그</label>
+
+                <br>
+                <br>
+
+                <!-- label 태그: form 안에 텍스트 기재 -->
+                <label>label 태그: 
+                    <input type="text" size="10" name="정보">
+                </label>
+                
+                <!-- input 태그: 입력, 전송 등의 기능을 하는 form 태그 짝꿍 -->
+                <input type="submit" value="input의 text, submit 태그">
+
+            </fieldset>
+
+        </form>
+
+
+    </body>
+</html>
