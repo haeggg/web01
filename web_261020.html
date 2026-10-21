@@ -29,12 +29,13 @@
         <!-- 메뉴 설정 -->
         <table>
             <tr>
-                <td><a href="#content1">colspan, rowspan 태그 관련</a></td>
-                <td><a href="#content2">caption, figcaption 태그 관련</a></td>
-                <td><a href="#content3">img, figure 태그 관련</a></td>
-                <td><a href="#content4">a 태그 관련</a></td>
-                <td><a href="#content5">페이지 내 이동 태그 관련</a></td>
-                <td><a href="#content6">form 태그 관련</a></td>
+                <td><a href="#content1">thead, tbody, tfoot 태그 관련</a></td>
+                <td><a href="#content2">colspan, rowspan 태그 관련</a></td>
+                <td><a href="#content3">caption, figcaption 태그 관련</a></td>
+                <td><a href="#content4">img, figure 태그 관련</a></td>
+                <td><a href="#content5">a 태그 관련</a></td>
+                <td><a href="#content6">페이지 내 이동 태그 관련</a></td>
+                <td><a href="#content7">form 태그 관련</a></td>
             </tr>
         </table>
 
@@ -42,8 +43,40 @@
         <hr>
         <br>
         <br>
+
+        <h5 id="content1">table 태그 내 thead, tbody, tfoot 태그</h5>
+        <p>표의 제목 부분, 실제 본문, 요약 부분을 나눠 주는 태그</p>
+        <br>
+        <table class="table2">
+            <thead>
+                <tr style="background-color: #fff0f0;">
+                    <td>제목</td>
+                    <td>제목</td>
+                    <td>제목</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>본문</td>
+                    <td>본문</td>
+                    <td>본문</td>
+                </tr>
+            </tbody>
+            <tfoot style="background-color: #ebebeb;">
+                <tr>
+                    <td>요약</td>
+                    <td>요약</td>
+                    <td>요약</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <br>
+        <hr>
+        <br>
+        <br>
         
-        <h5 id="content1">colspan 태그</h5>
+        <h5 id="content2">colspan 태그</h5>
         <p>테이블 열을 합치는 태그</p>
         <br>
         <table class="table2">
@@ -89,7 +122,35 @@
         <br>
         <br>
 
-        <h5 id="content2">caption 태그</h5>
+        <table border="1">
+            <caption>colgroup 태그 / col 태그</caption>
+            <p>열별로 묶어줄 수 있는 태그</p>
+            <br>
+            <colgroup>
+                <col>
+                <col span="2" style="background-color:blue;">
+                <col style="background-color:yellow">
+            </colgroup>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <br>
+        <hr>
+        <br>
+        <br>
+
+        <h5 id="content3">caption 태그</h5>
         <table class="table2">
             <caption>테이블 위 중앙에 표시되는 글(테이블 밑에 적어도 무조건 위에 표시)</caption>
             <br>
@@ -129,7 +190,7 @@
         <br>
 
         <!-- img 태그 -->
-        <h5 id="content3">img 태그</h5>
+        <h5 id="content4">img 태그</h5>
 
         <!-- figure, figcaption 태그 -->
         <figure>
@@ -150,7 +211,7 @@
         <br>
 
         <!-- a 태그 -->
-        <h5 id="content4">a 태그</h5>
+        <h5 id="content5">a 태그</h5>
         <p><a href="https://i.pinimg.com/originals/69/0e/9b/690e9b5c4fad48425963ac784feeab8b.gif">하이퍼링크</a>를 연결해 주는 태그</p>
         <p>이미지도 가능</p>
         <a href="https://i.pinimg.com/originals/69/0e/9b/690e9b5c4fad48425963ac784feeab8b.gif"><img src="image/cat2.gif" width="200px" alt="고양이 움짤"></a>
@@ -161,7 +222,7 @@
         <br>
 
         <!-- id 속성 -->
-        <h5 id="content5">페이지 내 이동</h5>
+        <h5 id="content6">페이지 내 이동</h5>
         <p> id를 이용하여 위치에 id 설정 / a 태그 href 속성에 # 아이디 설정</p>
 
         <br>
@@ -170,7 +231,7 @@
         <br>
 
         <!-- form 태그 -->
-        <h5 id="content6">form 태그</h5>
+        <h5 id="content7">form 태그</h5>
 
         <form method="get" action="hidden" enctype="utf-8">
         <!-- form 태그에 적힌 method / action / enctype 속성은 jsp 에서 처리하기 위해 적어주는 속성 -->
