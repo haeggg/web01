@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>261021 복습</title>
+        <style>
+            h2{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h2> form 태그 / input 태그 속성들 </h2>
+        
+        <form>
+            <fieldset>
+                <legend>입력을 받는 인풋 태그들</legend>
+                <p>
+                    fieldset 태그 (테두리) / legend 태그 (테두리 위 텍스트)
+                </p>
+
+                <label class="lab">타입 text: </label>
+                <input type="text" size="10">
+
+                <br>
+
+                <label class="lab">타입 password: </label>
+                <input type="password" size="10">
+
+                <br>
+                
+                <label class="lab">타입 hidden: </label>
+                <input type="hidden" name="이름" value="name">
+                <!-- 백엔드로 넘겨 주기 위해 사용하는 속성 -->
+
+                <br>
+                
+                <label class="lab">타입 search: </label>
+                <input type="search">
+
+                <br>
+                
+                <label class="lab">타입 url: </label>
+                <input type="url">
+
+                <br>
+                
+                <label class="lab">타입 email: </label>
+                <input type="email">
+
+                <br>
+                
+                <label class="lab">타입 tel: </label>
+                <input type="tel">
+
+                <br>
+                
+                <label class="lab">타입 number: </label>
+                <input type="number" min="0" max="10" value="0" step="2">
+
+                <br>
+                
+                <label class="lab">타입 range: </label>
+                <input type="range" min="1" max="10" value="1">
+
+                <br>
+                
+                <label class="lab">타입 radio: </label>
+                <label><input type="radio" name="subject" value="speaking">회화</label>
+                <label><input type="radio" name="subject" value="grammar">문법</label>
+                <label><input type="radio" name="subject" value="writing">작문</label>
+
+                <br>
+
+                <label class="lab">타입 color: </label>
+                <input type="color" value="#ffffff">
+
+                <br>
+
+                <label class="lab">타입 checkbox: </label>
+                <label><input type="checkbox" name="mailing1" value="news">해외 단신</label>
+                <label><input type="checkbox" name="mailing2" value="dialog">5분 회화 </label>
+                <label><input type="checkbox" name="mailing3" value="pops">모닝팝스</label>
+
+                <br>
+
+                <label class="lab">타입 date: </label>
+                <input type="date">
+
+                <br>
+
+                <label class="lab">타입 month: </label>
+                <input type="month">
+
+                <br>
+
+                <label class="lab">타입 week: </label>
+                <input type="week">
+
+            </fieldset>
+            
+        </form>
+
+    </body>
+</html>
