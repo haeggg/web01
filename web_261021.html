@@ -8,13 +8,19 @@
                 margin-top: 20px;
                 margin-bottom: 20px;
             }
+            label{
+                margin: 15px 0;
+            }
+            input{
+                margin: 15px 0;
+            }
         </style>
     </head>
     <body>
 
         <h2> form 태그 / input 태그 속성들 </h2>
         
-        <form>
+        <form oninput="result1.value=parseInt(num1.value)+parseInt(num2.value), result2.value=parseInt(num1.value)-parseInt(num2.value), result3.value=parseInt(num1.value)/parseInt(num2.value), result4.value=parseInt(num1.value)*parseInt(num2.value)">
             <fieldset>
                 <legend>입력을 받는 인풋 태그들</legend>
                 <p>
@@ -99,8 +105,163 @@
                 <label class="lab">타입 week: </label>
                 <input type="week">
 
+                <label class="lab">타입 time: </label>
+                <label>시작 시간: <input type="time" value="09:00"></label>
+                <label>종료 시간: <input type="time" value="18:00"></label>
+
+                <br>
+                
+                <label class="lab">타입 datetime-local: </label>
+                <label>시작 시간: <input type="datetime-local" value="2016-03-02T09:00"></label>
+                <label>종료 시간: <input type="datetime-local" value="2016-03-02T18:00"></label>
+
+                <br>
+
+                <label class="lab"> select 태그 </label>
+                <select>
+                    <optgroup label="공과1">
+                        <option value="archi">건축공학과</option>
+                        <option value="mechanic">기계공학과</option>
+                        <option value="indust">산업공학과</option>
+                        <option value="elec">전기전자공학과</option>
+                        <option value="computer" selected>컴퓨터공학과</option>
+                        <option value="chemical">화학공학과</option>
+                    </optgroup>
+                    <optgroup label="공과2">
+                        <option value="archi">건축공학과</option>
+                        <option value="mechanic">기계공학과</option>
+                        <option value="indust">산업공학과</option>
+                        <option value="elec">전기전자공학과</option>
+                        <option value="computer" selected>컴퓨터공학과</option>
+                        <option value="chemical">화학공학과</option>
+                    </optgroup>
+                </select>
+
+
+                <!--
+                
+                autofocus: 페이지를 불러오자마자 폼 요소에 마우스 커서 표시
+
+                placeholder: 입력란에 표시하는 힌트로 필드를 클릭하면 사라짐
+
+                readonly: 내용을 보기만 하고 입력하지 못하게 함
+
+                required: 필수 필드 체크(유효성 검사)
+
+                min, max : 해당 필드의 최솟값,최댓값
+
+                step : 허용된 범위 내의 숫자 간격
+
+                size : 텍스트 관련 필드에서 화면에 몇 글자까지 보이게 할지 결정
+
+                maxlength : 입력 가능한 최대 글자
+
+                minlegth : 입력해야 할 최소 글자
+                (크롬과 안드로이드 브라우저에서만 지원)
+                
+                -->
+            </fieldset>
+            <fieldset>
+                <legend>정보를 전달하는 인풋 태그들</legend>
+
+                <label class="lab">타입 submit: </label>
+                <input type="submit" value="전송하기">
+
+                <br>
+
+                <label class="lab">타입 reset: </label>
+                <input type="reset" value="다시입력">
+
+                <br>
+
+                <label class="lab">타입 image: </label>
+                <input style="width: 50px;" type="image" src="image/login.png">
+            </fieldset>
+
+            <fieldset>
+                <legend>textarea 태그</legend>
+                <textarea name="intro" cols="60" rows="5">
+열심히 사는 사람들의 손을 잡아주는 곳 - 이지스 퍼블리싱
+
+우리는 책을 내기 전에 다시 한번 물어봅니다.
+"이 책이 사람들에게 도움이 되는가?"
+
+더 쉽게, 더 빠르게 지식을 전달하고 싶습니다.
+이지스 퍼블리싱의 책과 앱을 만나보세요.
+                </textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>button</legend>
+
+                <button type="submit" value="submit">신청하기</button>
+                <button type="reset" value="reset">다시쓰기</button>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>output 태그 | 사칙연산기</legend>
+                
+                    <fieldset class="new_num">
+                        <legend>값 입력</legend>
+                        <p>값을 입력해 주세요.</p>
+                        <div>
+                            <label> 첫번째 값:</label>
+                            <input type="number" name="num1" value="0">
+
+                            <br>
+                            <br>
+                            
+                            <label>두번째 값:</label>
+                            <input type="number" name="num2" value="0">  
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="num_group">
+                        <legend>+</legend>
+                        <output name="result1" for="num_1"></output>
+                    </fieldset>
+
+                    <fieldset class="num_group">
+                        <legend>-</legend>
+                        <output name="result2" for="num_2"></output>
+                    </fieldset>
+
+                    <fieldset class="num_group">
+                        <legend>÷</legend>
+                        <output name="result3" for="num_3"></output>
+                    </fieldset>
+
+                    <fieldset class="num_group">
+                        <legend>x</legend>
+                        <output name="result4" for="num_4"></output>
+                    </fieldset>
             </fieldset>
             
+            <fieldset>
+                <legend>meter 태그</legend>
+                <ul>
+                    <li>
+                        <label>점유율 0.8%</label>
+                        <meter value="0.8"></meter>
+                    </li>
+                    
+                    <li>
+                        <label>사용량 64%</label>
+                        <meter min="0" max="100" value="60"></meter>
+                    </li>
+
+                    <li>
+                        <label>트래픽 초과</label>
+                        <meter min="1024" max="10240" low="2048" high="8192" value="9216"></meter>
+                    </li>
+
+                    <li>
+                        <label>점유율</label>
+                        <meter value="0.5" optimum="0.8"></meter>
+                    </li>
+                </ul>
+            </fieldset>
         </form>
 
     </body>
