@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>list-style 활용4</title>
+        <style>
+            *{
+                background-color: #fff;
+            }
+            ol{
+                list-style-type: upper-roman;
+                list-style-position: inside;
+            }
+            .just_ul{
+                list-style-type: square;
+                list-style-position: outside;
+            }
+            .img_ul{
+                list-style-image: url('image/circle2.png');
+            }
+            h1{
+                color: darkcyan;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 종합 list-style 활용 -->
+        <h1>이지스퍼블리싱</h1>
+
+        <ol>
+            <li>회사소개</li>
+            <li>도서</li>
+            <li>자료실</li>
+            <li>질문답변</li>
+            <li>동영상강의</li>
+        </ol>
+
+        <ul class="just_ul">
+            <li>회사소개</li>
+            <li>도서</li>
+            <li>자료실</li>
+            <li>질문답변</li>
+            <li>동영상강의</li>
+        </ul>
+
+        <ul class="img_ul">
+            <li>회사소개</li>
+            <li>도서</li>
+            <li>자료실</li>
+            <li>질문답변</li>
+            <li>동영상강의</li>
+        </ul>
+    </body>
+</html>
