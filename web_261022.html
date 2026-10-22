@@ -2,33 +2,57 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>가정용 꿀사과</title>
+        <title>제주도 천혜향</title>
         <style>
             *{
                 margin: 0;
                 padding: 0;
             }
 
+            body{
+                background-color: #fff7ee;
+            }
+
+            .top{
+                background-color: orange;
+                height: 5px;
+                width: 100%;
+            }
+            .contain1{
+                background-color: orange;
+                width: 100%;
+                height: 605px;
+            }
+
             .intro{
-                background-color: #000;
-                padding: 50px 30px;
+                background-image: url(image/orange.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 600px;
+            }
+
+            .contain2{
+                width: 100%;
+                height: 200px;
+                background-color: rgb(255, 255, 255, 0.8);
+                padding: 15px 20px 30px 20px;
             }
             
-            /*
-            img{ 
-                width: 80%;
-
-
-            }*/
-
+            
             #main_text{
-                color: #fff7ee;
+                color: orangered;
                 text-align: top;
                 margin: 30px 0 40px 0;
             }
             .intro_text{
-                color: orange;
+                color: #3c0d00;
+                font-size: 12px;
             }
+            .boldtext{
+                font-weight: 800;
+            }
+
 
             #sub_text{
                 background-color: orange;
@@ -38,15 +62,17 @@
             fieldset{
                 width: 100%;
                 padding: 20px 0;
+                background-color: #fff;
+                margin: 20px 0;
             }
             .info{
                 text-align: center;
             }
 
             .reg{
-                font-size: 15px;
+                font-size: 20px;
                 color: orange;
-                text-align: center;
+                font-weight: 800;
             }
             p{
                 font-size: 18px;
@@ -66,25 +92,39 @@
                 color: orangered;
             }
 
+            .end_text{
+                font-size: 12px;
+                color: gray;
+                margin-top: 25px;
+            }
+
+
         </style>
     </head>
     <body>
 
         <div class="all">
-            <div class="intro">
-                <!--<img src="image/orange.png" alt="Setoka">
-                <img src="image/orange.png" alt="Setoka">-->
+            <div class="top">
 
-                <h1 id="main_text">제주도 천혜향</h1>
+            </div>
+            <div class="contain1">
+                <div class="intro">
+                    <!--<img src="image/orange.png" alt="Setoka">
+                    <img src="image/orange.png" alt="Setoka">-->
+                    <div class="contain2">
+                        <h1 id="main_text">제주도 천혜향</h1>
 
-                <p class="intro_text">
-                    <mark>천혜향은 운향과의 과일 나무입니다.</mark> 귤속의 잡종 재배식물로,
-                    1998년에 일본에서 청견과 ‘앙코르 2호’의 잡종인
-                    ‘구치노쓰 37호’에 마코트를 교잡해 개발한 만감입니다.
-                    <br>
-                    품종명은 ‘세토카’이며, <span class="boldtext">대한민국에서는 2005년부터
-                    ‘천혜향’이라는 명칭으로 통일</span>되어 불리고 있습니다.
-                </p>        
+                        <p class="intro_text">
+                            <mark>천혜향은 운향과의 과일 나무입니다.</mark> 귤속의 잡종 재배식물로,
+                            1998년에 일본에서 청견과 ‘앙코르 2호’의 잡종인
+                            <br>
+                            ‘구치노쓰 37호’에 마코트를 교잡해 개발한 만감입니다.
+                            <br>
+                            품종명은 ‘세토카’이며, <span class="boldtext">대한민국에서는 2005년부터
+                            ‘천혜향’이라는 명칭으로 통일</span>되어 불리고 있습니다.
+                        </p>
+                    </div>  
+                </div>
             </div>
 
             <div class="info">
@@ -118,7 +158,7 @@
                     <fieldset class="field3">
                         <legend class="reg">고객센터</legend>
                         <h2>0000-0000</h2>
-                        <p> 상담시간: 오전 9시 ~ 오후 6시(주말, 공휴일 제외)</p>
+                        <p class="end_text"> 상담시간: 오전 9시 ~ 오후 6시(주말, 공휴일 제외)</p>
                     </fieldset>
 
                 </form>
