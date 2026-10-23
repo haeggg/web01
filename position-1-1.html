@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>position relative 속성</title>
+        <style>
+            img{
+                width: 80px;
+            }
+            .box1{
+                float: left;
+                width: 100px;
+                margin-right: 10px;
+                padding: 20px;
+            }
+            .box2{
+                position: relative;
+                left: -95px;
+                top: 10px;
+                width: 300px;
+                float: left;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <img src="image/cat_2.jpg">
+        <img src="image/dog_1.png">
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- position 설정 확인 -->
+
+        <div class="box1"><img src="image/cat_2.jpg"></div>
+        <div class="box2"><img src="image/dog_1.png"></div>
+    </body>
+</html>
