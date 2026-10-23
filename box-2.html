@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>display 속성 1</title>
+        <style>
+            div{
+                width: 800px;
+                margin: 20px;
+                border: 1px solid #000;
+                border-radius: 5px;
+            }
+            #inline{
+                margin: 10px;
+            }
+            #inline2{
+                display: inline;
+                margin: 10px;
+            }
+            /* 원래 속성과 동일하게 처리 */
+
+            #block{
+                display: block;
+                margin: 10px;
+            }
+            #inline-block{
+                display: inline-block;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="inline">
+            <h1>inline</h1>
+            <img src="image/cat.jpg">
+            <img src="image/dog.jpg">
+            <img src="image/orange2.png">
+        </div>
+        <div id="inline-block">
+            <h1>inline-block</h1>
+            <img src="image/cat.jpg">
+            <img src="image/dog.jpg">
+            <img src="image/orange2.png">
+        </div>
+        <div id="inline2">
+            <h1>inline 2</h1>
+            <img src="image/cat.jpg">
+            <img src="image/dog.jpg">
+            <img src="image/orange2.png">
+        </div>
+        <div id="block">
+            <h1>block</h1>
+            <img src="image/cat.jpg">
+            <img src="image/dog.jpg">
+            <img src="image/orange2.png">
+        </div>
+        
+    </body>
+</html>
