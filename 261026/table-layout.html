@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>table-layout 속성</title>
+        <style>
+            table, td{
+                border: 0.5px solid #000;
+            }
+            .table1{
+                border-collapse: collapse;
+                width: 300px;
+                table-layout: fixed;
+                word-break: break-all;
+                height: auto;
+            }
+            .table1 td{
+                width: 150px;
+                border: 0.5px solid #555;
+            }
+            
+            .table2{
+                border-collapse: collapse;
+                width: 300px;
+                table-layout: auto;
+                word-break: break-all;
+                height: auto;
+            }
+            .table2 td{
+                width: 150px;
+                border: 0.5px solid #555;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Table Layout1</h1>
+        <table class="table1">
+            <tr>
+                <td>한글로띄어쓰기없이길게붙여쓰기</td>
+                <td>long_description_without_space</td>
+            </tr>
+        </table>
+
+        <h1>Table Layout2</h1>
+        <table class="table2">
+            <tr>
+                <td>한글로띄어쓰기없이길게붙여쓰기</td>
+                <td>long_description_without_space</td>
+            </tr>
+        </table>
+    </body>
+</html>

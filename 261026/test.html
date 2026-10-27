@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>소노호텔앤리조트</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            h3{
+                margin: 10px 0;
+                color: rgb(171, 147, 91);
+            }
+
+            /* header */
+            header{
+                width: 100%;
+                height: 500px;
+                background-image: url(image/background.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            header h1{
+                display: inline-block;
+                margin: 0 20px;
+                float: left;
+            }
+            header h1 a img{
+                width: 130px;
+                margin-left: 80px;
+                margin-top: 18px;
+            }
+
+            #main-text{
+                text-align: center;
+                font-size: 30px;
+            }
+            #main-text a{
+                text-decoration: none;
+                color: rgb(171, 147, 91);
+            }
+
+            #menu{
+                height: 70px;
+
+                background-color: rgb(220, 215, 202);
+                text-align: center;
+                padding-right: 50px;
+            }
+            #menu a:visited{
+                text-decoration: none;
+                color: rgb(89, 79, 56);
+            }
+            #menu a{
+                text-decoration: none;
+                color: rgb(89, 79, 56);
+            }
+            #menu a:hover{
+                text-decoration: none;
+                color: rgb(29, 21, 2);
+            }
+            
+            #menu li{
+                display: inline-block;
+                margin: 22px 20px;
+                float: right;
+                font-weight: 600;
+            }
+
+            /* section */
+            section{
+                width: 65%;
+                height: 1700px;
+
+                display: inline-block;
+                float: left;
+            }
+            .arti{
+                margin: 80px 30px;
+            }
+            #intro h3{
+                font-size: 25px;
+            }
+            #intro p{
+                line-height: 1.8;
+                margin: 20px 0;
+                color: #444;
+            }
+            #intro h1{
+                margin: 20px 0;
+            }
+            #intro img{
+                margin: 20px 0 40px 0;
+                width: 90%;
+            }
+
+            #sub1 h3{
+                font-size: 25px;
+            }
+            #sub1 div{
+                display: inline-block;
+                margin: 20px 10px;
+            }
+
+            #sub1 h4{
+                color: rgb(89, 79, 56);
+
+            }
+            .rooms img{
+                width: 150px;
+            }
+            .rooms input{
+
+                width: 150px;
+                height: 30px;
+                color: white;
+                background-color: rgb(89, 79, 56);
+                border: 0;
+                margin: 10px 0;
+            }
+
+
+
+
+
+            /* aside */
+            aside{
+                width: 30%;
+                height: 1700px;
+
+                display: inline-block;
+                float: right;
+
+                background-color: #eee;
+            }
+            .subm1{
+                margin: 80px 30px;
+            }
+            .div-g{
+                margin: 15px 0;
+            }
+            .button-g{
+                width: 150px;
+                height: 30px;
+
+                background-color: rgb(89, 79, 56);
+                border: 0;
+                border-radius: 5px;
+                margin: 10px 0;
+
+                color: white;
+            }
+            aside div h3{
+                font-size: 25px;
+            }
+
+
+            .sub_text{
+                margin: 20px 0;
+            }
+
+            .subm2{
+                margin: 80px 30px;
+            }
+
+            .subm3{
+                margin: 80px 30px;
+            }
+            .subm3 ul li{
+                list-style: none;
+                font-size: 15px;
+                margin: 10px 0;
+            }
+            .subm3 p{
+                font-size: 10px;
+                margin: 10px 0;
+                color: #555;
+            }
+
+            /* footer */
+            footer{
+                clear: both;
+                height: 40px;
+
+                padding: 35px;
+                
+                background-color: rgb(89, 79, 56);
+                color: white;
+
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <header>
+            <h1 id="main-text"><a href="#"><img src="image/sn_logo.svg" alt="소노호텔앤리조트"></a></h1>
+            <ul id="menu">
+                <li><a href="#">브랜드 소개</a></li>
+                <li><a href="#">객실 보기</a></li>
+                <li><a href="#">예약하기</a></li>
+                <li><a href="#">문의하기</a></li>
+            </ul>
+            
+        </header>
+        <form>
+            <section>
+                <article class="arti" id="intro">
+                    <h3>브랜드 소개</h3>
+                    <hr>
+                    <h1>SONO, 모두가 꿈꾸는 이상향</h1>
+
+                    <img src="image/intro_image.jpg">
+                    <p>
+                        <b>소노는 ‘꿈’, ‘이상향’을 의미합니다.</b>
+                        <br>
+                        '소노'는 이탈리아어 SOGNO(꿈, 이상향)라는 단어를 부르고 읽히기 쉽게 변형한 것으로,
+                        호텔앤리조트 브랜드인 SONO FELICE(행복한 삶을 누리는 이상향)에서 시작되었습니다.
+                    </p>
+                    <p>
+                        <b>소노는 꿈을 이야기합니다.</b>
+                        <br>
+                        행복을 느끼는 그 모든 순간과 찬란한 경험이 더해져 비로소 그 꿈이
+                        완성됩니다. 소노는 ‘행복을 만들어가는 세상’의 또 다른 이름입니다.
+                    </p>
+                </article>
+            
+                <article class="arti" id="sub1">
+                    <h3>객실 보기</h3>
+                    <hr>
+
+                    <div class="rooms">
+                        <div>
+                            <h4>소노벨 천안</h4>
+                            <br>
+                            <img src="image/room1.png" alt="소노벨 천안">
+                            <br>
+                            <input type="submit" value="객실 확인하기"></bottom>
+                        </div>
+                        <div>
+                            <h4>소노벨 단양</h4>
+                            <br>
+                            <img src="image/room2.png" alt="소노벨 단양">
+                            <br>
+                            <input type="submit" value="객실 확인하기"></bottom>
+                        </div>
+                        <div>
+                            <h4>소노벨 비발디파크</h4>
+                            <br>
+                            <img src="image/room3.png" alt="소노벨 비발디파크">
+                            <br>
+                            <input type="submit" value="객실 확인하기"></bottom>
+                        </div>
+                        <div>
+                            <h4>소노벨 청송</h4>
+                            <br>
+                            <img src="image/room4.png" alt="소노벨 비발디파크">
+                            <br>
+                            <input type="submit" value="객실 확인하기"></bottom>
+                        </div>
+                        <div>
+                            <h4>소노벨 델피노</h4>
+                            <br>
+                            <img src="image/room5.png" alt="소노벨 천안">
+                            <br>
+                            <input type="submit" value="객실 확인하기"></bottom>
+                        </div>
+                        <div>
+                            <h4>소노벨 양평</h4>
+                            <br>
+                            <img src="image/room6.png" alt="소노벨 천안">
+                            <br>
+                            <input type="submit" value="객실 확인하기"></bottom>
+                        </div>
+                    </div>
+
+                </article>
+            </section>
+
+            <aside>
+                <div class="subm1">
+                    <h3>예약하기</h3>
+                    <hr>
+                    
+                    <div class="div-g">
+                        <label>입실 날짜: <input type="date"></label>
+                        <br>
+                    </div>
+                    <div class="div-g">
+                        <label>퇴실 날짜 날짜: <input type="date"></label>
+                        <br>
+                    </div>
+                    
+                    <input type="submit" value="객실 선택하기" class="button-g">
+                </div>
+
+                <div class="subm2">
+                    <h3>온라인 문의하기</h3>
+                    <hr>
+
+                    <div class="div-g">
+                        <label>성함 : </label>
+                        <input type="text" size="20">
+                        <br>
+                    </div>
+                    <div class="div-g">
+                        <label>문의내용 :</label>
+                        <input type="text" size="20">
+
+                        <input type="submit" value="전송하기" class="button-g">
+                    </div>
+
+                </div>
+
+                <div class="subm3">
+                    <h3>고객센터</h3>
+                    <hr>
+
+                    <ul>
+                        <li><b>전화번호:</b> 0000-0000</li>
+                        <li><b>이메일:</b> 0000@naver.com</li>
+                    </ul>
+                    <p>고객센터 운영시간: 9:00 ~ 18:00(주말, 공휴일 제외)</p>
+
+                </div>
+
+                <div class="subm4">
+                    <h3>갤러리 보기</h3>
+                    <hr>
+
+                    <img src="image/sub1.webp" alt="picture1">
+                    <img src="image/sub2" alt="picture2">
+                    <img src="image/sub3" alt="picture3">
+
+                </div>
+            </aside>
+            </form>
+
+             
+        
+
+        <footer>
+            <p>copyright  2026 haein</p>
+        </footer>
+    </body>
+</html>
