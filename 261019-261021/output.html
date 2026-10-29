@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>사칙연산기</title>
+        <style>
+            h2{
+                text-align: center;
+                color: #8800ff;
+            }
+            .new_num{
+                padding: 10px 40px 30px 40px;
+                background-color: #fcf9ff;
+            }
+            .new_num legend{
+                font-weight: 600;
+                font-size: 18px;
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+            div{
+                text-align: center;
+            }
+            div label{
+                margin-top: 10px;
+            }
+            /* output{
+                text-align: center;
+            } */
+            .num_group legend{
+                text-align: center;
+            }
+            .num_group{
+                height: 50px;
+                margin-top: 15px;
+                text-align: center;
+            }
+            fieldset label{
+                margin-right: 15px;
+            }
+            fieldset input{
+                margin-right: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>사칙연산기</h2>
+        <form oninput="result1.value=parseInt(num1.value)+parseInt(num2.value), result2.value=parseInt(num1.value)-parseInt(num2.value), result3.value=parseInt(num1.value)/parseInt(num2.value), result4.value=parseInt(num1.value)*parseInt(num2.value)">
+            <fieldset class="new_num">
+                <legend>값 입력</legend>
+                <p>값을 입력해 주세요.</p>
+                <div>
+                    <label> 첫번째 값:</label>
+                    <input type="number" name="num1" value="0">
+
+                    <br>
+                    <br>
+                    
+                    <label>두번째 값:</label>
+                    <input type="number" name="num2" value="0">  
+                </div>
+             </fieldset>
+
+             <fieldset class="num_group">
+                <legend>+</legend>
+                <output name="result1" for="num_1"></output>
+             </fieldset>
+
+             <fieldset class="num_group">
+                <legend>-</legend>
+                <output name="result2" for="num_2"></output>
+             </fieldset>
+
+             <fieldset class="num_group">
+                <legend>÷</legend>
+                <output name="result3" for="num_3"></output>
+             </fieldset>
+
+             <fieldset class="num_group">
+                <legend>x</legend>
+                <output name="result4" for="num_4"></output>
+             </fieldset>
+        </form>
+        
+    </body>
+</html>

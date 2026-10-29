@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>프로필</title>
+        <style>
+            dt{
+                color:blue;
+                line-height: 30px;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 자기소개 부분 -->
+        <h2>Who am I?</h2>
+        <p>안녕하세요. 저는 <b>그린컴퓨터아트학원</b>에서 <span style="color: red">웹 코딩</span>을 배우고 있는 <mark>28세 전해인</mark>입니다.</p>
+        <br>
+        <hr>
+
+        <!-- 경력 부분 -->
+        <h2>Experience</h2>
+        <ul>
+            <li>디자인
+                <ul>
+                    <li>공공기관 SNS 콘텐츠 제작 및 운영</li>
+                    <li>기업 상품 패키지 제작, 상세페이지 디자인</li>
+                    <li>세미나 행사 물품 디자인 등</li>
+                </ul>
+            </li>
+            <li>영상
+                <ul>
+                    <li>방송국 FD 업무</li>
+                    <li>영상 편집 및 자막 업무</li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+        <hr>
+
+        <!-- 스킬 부분 -->
+        <h2>Skills</h2>
+        
+        <!-- dl 버전 -->
+        <dl>
+            <dt>어도비</dt>
+            <dd>
+                <ul>
+                    <li>일러스트</li>
+                    <li>포토샵</li>
+                    <li>인디자인</li>
+                    <li>프리미어 프로</li>
+                    <li>에프터이펙트</li>
+                </ul>
+            </dd>
+            <dt>웹 언어</dt>
+            <dd>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+            </dd>
+
+        <!-- ul 버전 -->
+        <!--<ul>
+            <li>어도비
+                <ul>
+                    <li>일러스트</li>
+                    <li>포토샵</li>
+                    <li>인디자인</li>
+                    <li>프리미어 프로</li>
+                    <li>에프터이펙트</li>
+                </ul>
+            </li>
+            <li>웹 언어
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+        <hr>
+        -->
+
+        <!-- 학력 부분 -->
+        <h2>Education</h2>
+
+        <h5>숭실대학교 글로벌미래교육원</h5>
+        <p>2018.03 ~ 2024.02</p>
+        <br>
+        <h5>한밭고등학교</h5>
+        <p>2015.03 ~ 2018.02</p>
+        <br>
+    </body>

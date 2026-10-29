@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>261019 복습</title>
+        <style>
+            blockquote{
+                border: 0.5px solid blue;
+                padding: 10px;
+            }
+            table, th, td{
+                /* 선 설정 */
+                border: 0.5px solid #000000;
+            }
+            ul, ol, dl{
+                /* 줄 여백 설정 */
+                line-height: 30px;
+            }
+            th{
+                /* 배경색상 설정 */
+                background-color: rgb(212, 255, 208);
+                
+                /* 좌우여백 설정 */
+                width: 100px;
+            }
+            td{
+                /* 좌우여백 설정 */
+                width: 300px;                
+            }
+            /* tr > td:nth-child는 자식 요소를 선택하는 CSS 선택기 */
+            /* tr > td:nth-child(odd)는 홀수인 자식 요소를 선택하는 CSS 선택기 */
+            /* tr > td:nth-child(even)는 짝수인 자식 요소를 선택하는 CSS 선택기 */
+        </style>
+    </head>
+    <body>
+        <h1>261019 복습</h1>
+
+        <p>
+            hn: 제목 태그(1~6까지 있음)
+            <br>
+            p: 문단 태그
+        </p>
+
+        <blockquote>
+            blockquote: 인용문 태그
+            코드 내에서 줄바꿈만 하면 적용 X(br 태그 활용해야 함)
+        </blockquote>
+
+        <pre>
+            pre: 공백이나           줄바꿈을 
+            표현하는 태그
+        </pre>
+
+        <p>
+            <strong>strong 태그:</strong> 텍스트 강조 태그1
+            <br>
+            <b>b 태그:</b> 텍스트 강조 태그2
+        </p>
+
+        <p>
+            <em>em 태그:</em> 이텔릭 / 흐름상 강조할 때 쓰는 태그
+            <br>
+            <i>i 태그:</i> 단순 이텔릭 태그
+        </p>
+
+        <p>
+            <q>q 태그:</q> 줄바꿈이 없는 인용 태그(따옴표가 추가됨)
+            <br>
+            <mark>mark 태그:</mark> 형광펜 배경색 효과 태그(노란색 고정)
+        </p>
+        
+        <!-- 배경색상 설정 -->
+        <div style="background-color: lightgray;">
+            div 태그: 줄을 바꾸어 하나의 독립된 단락/ 블록으로 묶을 때 쓰는 태그
+            <br>
+            <span style="color: blue">span 태그:</span> 줄 안에서 인라인으로 묶기
+        </div>
+
+        <ul>
+            <li>ul 태그: 순서 없는 목록</li>
+                <ul>
+                    <li>li 태그 안에 리스트를 또 넣을 수 있음</li>
+                </ul>
+            <li>li 태그: 목록 리스트</li>
+        </ul>
+
+        <!-- type 설정(순서 있는 리스트 목록 타입을 설정) -->
+        <ol type="1">
+            <li>ol 태그: 순서 있는 목록</li>
+                <ol type="a">
+                    <li>ol 태그는 type 값과 start 값으로 리스트 숫자 조정 가능</li>
+                </ol>
+            <li>li 태그: 목록 리스트</li>
+        </ol>
+
+        <dl>
+            <dt>dl 태그: 제목과 설명 텍스트로 표현하는 목록</dt>
+            <dd>dt 태그: 제목 텍스트</dd>
+            <dd>dd 태그: 설명 텍스트</dd>
+            <!-- dd 태그 활용하면 ul / ol 태그 li의 텍스트 라인이랑 똑같이 설정되어 있음 -->
+        </dl>
+
+        <table>
+            <tr>
+                <th>table 태그</th>
+                <td>표를 생성하는 태그</td>
+            </tr>
+            <tr>
+                <th>tr 태그</th>
+                <td>표의 행을 생성하는 태그</td>
+            </tr>
+            <tr>
+                <th>th 태그</th>
+                <td>셀 내에 제목에 해당하는 표의 열 태그</td>
+            </tr>
+            <tr>
+                <th>td 태그</th>
+                <td>셀 내에 내용을 입력하는 표의 열 태그</td>
+            </tr>
+            <!-- rowspan: 행 합치기(th에 씀) / colspan: 열 합치기(td에 씀) -->
+        </table>
+    </body>
+</html>

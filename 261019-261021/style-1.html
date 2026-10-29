@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>스타일 시트 구성</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        
+        <style>
+            section{
+                width: 500px;
+                padding: 15px;
+                border: 5px solid #999;
+            }
+
+            h2{
+                color: red;
+            }
+            p{
+                font-size: 0.9em;
+                line-height: 2.0;
+            }
+        </style>
+
+        <!--
+        <link rel="stylesheet" href="css/style.css">
+        -->
+
+        <!-- 
+        익스터널 처리 확인용
+        ⓐ link 태그가 인터널 위에 위치하면 인터널 속성으로 적용
+        ⓑ link 태그가 인터널 아래에 위치하면 익스터널 속성으로 적용 
+
+        * 익스터널, 인터널, 인라인을 함께 쓸 경우, 인라인 속성으로 적용
+        * 인터널, 인라인을 함께 쓸 경우, 인라인 속성으로 적용
+        -->
+
+    </head>
+
+    <body>
+        <div id="container">
+            <section>
+                <h2>Who am I?</h2>
+                <p>안녕하세요. 웹 코딩을 배우고 있는 전해인입니다.</p>
+            </section>
+        </div>
+    </body>
+
+</html>
