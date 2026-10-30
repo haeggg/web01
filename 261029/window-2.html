@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>브라우저 객체</title>
+
+        <script>
+            function open_naver(){
+                var width = 800;
+                var height = 500;
+
+                var left = screen.width / 2 - width / 2;
+                var top = screen.height / 2 - height / 2;
+
+                var mywin = window.open('https://www.naver.com', 'popup', 'top='+top+', left='+left+', width='+width+', height='+height+', scrollbars = yes')
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="네이버 사이트 새창으로 띄우기" onclick="open_naver()" />
+    </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>수학 객체</title>
+
+        <script>
+
+            document.write("<h1>컴퓨터와 가위, 바위, 보!</h1>");
+
+            var game = prompt("가위, 바위, 보 중 선택하세요.", "가위");
+            var gameNum;
+            
+
+            switch(game){
+                case "가위": gameNum = 1;
+                    break;
+
+                case "바위": gameNum = 2;
+                    break;
+
+                case "보": gameNum = 3;
+                    break;
+
+                default: alert("잘못 작성하셨습니다.");
+                location.reload();
+            }
+
+            var com = Math.ceil(Math.random() * 3);
+
+            var game_result;
+
+            
+            if(gameNum == 1){
+                game_result = "✌️가위";
+            }
+            else if(gameNum == 2){
+                game_result = "✊바위";
+            }
+            else{
+                game_result = "🤚보";
+            }
+
+            var com_result;
+
+            if(com == 1){
+                com_result = "✌️가위";
+            }
+            else if(com == 2){
+                com_result = "✊바위";
+            }
+            else{
+                com_result = "🤚보";
+            }
+
+            document.write("■ 컴퓨터 : " + com_result + "<br>", "■ 입력한 값 : " + game_result + "<br>", "<br>");
+            
+            if(gameNum == 1){
+                if(com == 1){
+                    document.write("컴퓨터와 비겼습니다.");
+                }
+                else if(com == 2){
+                    document.write("컴퓨터에게 졌습니다.");
+                }
+                else{
+                    document.write("컴퓨터를 이겼습니다.");
+                }
+
+            }
+            else if(gameNum == 2){
+                if(com == 1){
+                    document.write("컴퓨터를 이겼습니다.");
+                }
+                else if(com == 2){
+                    document.write("컴퓨터와 비겼습니다.");
+                }
+                else{
+                    document.write("컴퓨터에게 졌습니다.");
+                }
+            }
+            else{
+                if(com == 1){
+                    document.write("컴퓨터에게 졌습니다.");
+                }
+                else if(com == 2){
+                    document.write("컴퓨터를 이겼습니다.");
+                }
+                else{
+                    document.write("컴퓨터와 비겼습니다.");
+                }
+            }
+
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

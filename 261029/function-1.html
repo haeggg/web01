@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<heml>
+    <head>
+        <meta charset="utf-8">
+        <title>함수</title>
+
+        <script>
+            var count = 0;
+
+            myFnc();
+
+            function myFnc(){
+                count++;
+                document.write("hello " + count + "<br>" );
+            }
+
+            myFnc();
+
+            /*
+            익명 함수는 선언 전에 호출하면 호출X 오류O
+
+            theFnc();
+            */
+
+            var theFnc = function(){
+                count++;
+                document.write("bye " + count + "<br>" );
+            }
+
+            theFnc();
+        </script>
+    </head>
+    <body>
+
+    </body>
+</heml>
