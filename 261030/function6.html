@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>객체 생성자 함수</title>
+
+        <script>
+
+            function ranData(){
+
+                var date = new Date();
+                var x = date.getSeconds();
+                var y = (x % 5) + 1;
+
+                alert("x값은 : " + x + "/ 난수 = " + y);
+            }
+
+        </script>
+    </head>
+    <body>
+        <a href="#" onclick="ranData()">난수 발생 시키기</a>
+    </body>
+</html>

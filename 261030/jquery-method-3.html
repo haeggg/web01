@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>선택자</title>
+        
+        <script
+        src="https://code.jquery.com/jquery-4.0.0.min.js"
+        integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+        crossorigin="anonymous">
+        </script>
+
+        <script>
+            $(function(){
+                $(function(){
+                    var idxNum = $("li").index($("#list3"));
+                    console.log(idxNum);
+                });
+            });
+        </script>
+
+    </head>
+    <body>
+
+        <h1>배열 관련 메서드</h1>
+        <ul>
+            <li>내용 1</li>
+            <li>내용 2</li>
+            <li id="list3">내용 3</li>
+            <li>내용 4</li>
+        </ul>
+
+    </body>
+</html>

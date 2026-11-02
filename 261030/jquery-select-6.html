@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>위치 탐색 선택자1</title>
+        
+        <script
+        src="https://code.jquery.com/jquery-4.0.0.min.js"
+        integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+        crossorigin="anonymous">
+        </script>
+
+        <script>
+            $(function(){
+                $("#menu li:first")
+                .css({"background-color":"#f00"});
+
+                $("#menu li:last")
+                .css({"background-color":"#0ff"});
+            });
+        </script>
+
+    </head>
+    <body>
+        <h1>탐색 선택자</h1>
+        <ul id="menu">
+            <li>내용 1</li>
+            <li>내용 2</li>
+            <li>내용 3</li>
+            <li>내용 4</li>
+        </ul>
+    </body>
+</html>
